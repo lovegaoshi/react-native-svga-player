@@ -45,7 +45,7 @@ apply plugin: 'maven-publish'
 android {
     def agpVersion = Version.ANDROID_GRADLE_PLUGIN_VERSION
     if (agpVersion.tokenize('.')[0].toInteger() >= 7) {
-      namespace "com.bang88.rnsvgaplayer"
+      namespace "bang.svga.player"
     }
     compileSdkVersion safeExtGet('compileSdkVersion', DEFAULT_COMPILE_SDK_VERSION)
     buildToolsVersion safeExtGet('buildToolsVersion', DEFAULT_BUILD_TOOLS_VERSION)
