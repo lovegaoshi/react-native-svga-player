@@ -1,0 +1,45 @@
+{
+  "name": "react-native-svga-player",
+  "title": "React Native Svga Player",
+  "version": "1.1.0",
+  "description": "svga player for react native",
+  "source": "js/index",
+  "files": [
+    "js",
+    "android",
+    "ios",
+    "rtn-centered-text.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bang88/react-native-svga-player.git",
+    "baseUrl": "https://github.com/bang88/react-native-svga-player"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": {
+    "name": "bang88"
+  },
+  "license": "MIT",
+  "licenseFilename": "LICENSE",
+  "readmeFilename": "README.md",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {},
+  "codegenConfig": {
+    "name": "RNSVGAPlayer",
+    "type": "components",
+    "jsSrcsDir": "js"
+  }
+}
