@@ -18,10 +18,13 @@ public class RCTSVGAImageView extends SVGAImageView {
 
             @Override
             public void onStep(int frame, double percentage) {
+                ReactContext reactContext = (ReactContext) getContext();
+                if (!reactContext.hasActiveReactInstance()) {
+                    return;
+                }
                 WritableMap changeMap = Arguments.createMap();
                 changeMap.putString("action", "onFrame");
                 changeMap.putInt("value", frame);
-                ReactContext reactContext = (ReactContext) getContext();
                 reactContext.getJSModule(RCTEventEmitter.class).
                         receiveEvent(getId(), "topChange", changeMap);
 
